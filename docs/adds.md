@@ -36,27 +36,6 @@ barry-tech.local
 
 Configured:
 - DNS Server
-- Global Catalog
-- Forest Functional Level
-- Domain Functional Level
-
----
-
-# Configure DNS
-
-Added forwarders:
-
-```text
-8.8.8.8
-1.1.1.1
-```
-
-Validation:
-
-```powershell
-nslookup
-ipconfig /all
-```
 
 ---
 
@@ -67,11 +46,12 @@ Added custom UPN suffix:
 ```text
 barry-tech.com
 ```
+![UPN Suffix](../Screenshots/upn-suffix.png)
 
 Updated user accounts to authenticate using:
 
 ```text
-user@barry-tech.com
+@barry-tech.com
 ```
 
 ---

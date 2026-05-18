@@ -29,8 +29,6 @@ The lab demonstrates enterprise identity management, endpoint security, cloud au
 
 # Architecture
 
-# Architecture
-
 ![Hybrid Architecture](architecture/hybrid-enterprise-architecture.png)
 
 # Core Areas
