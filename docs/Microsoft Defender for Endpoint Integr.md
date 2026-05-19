@@ -1,6 +1,6 @@
 # Microsoft Defender for Endpoint Integration
 
-# Objective
+# Overview
 
 Integrate Microsoft Intune with Microsoft Defender for Endpoint to provide:
 
