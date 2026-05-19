@@ -96,7 +96,7 @@ Configured:
 
 Uploaded hardware hash into Intune using script.
 
-![UPN Suffix](./Screenshoots/autopilot-enrollment.png)
+![UPN Suffix](./Screenshoots/Autopilot-enrollment.png)
 
 Configured:
 - User-driven deployment
