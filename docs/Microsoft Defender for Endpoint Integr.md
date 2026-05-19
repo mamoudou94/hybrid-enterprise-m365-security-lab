@@ -104,10 +104,7 @@ Monitored:
 
 # Web Content Filtering
 
-# Objective
-
 Restrict access to unsafe and malicious websites using Microsoft Defender for Endpoint web protection policies.
-
 ---
 
 # Blocked Categories
