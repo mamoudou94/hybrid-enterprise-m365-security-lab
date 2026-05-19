@@ -46,9 +46,9 @@ Added custom UPN suffix:
 ```text
 barry-tech.com
 ```
-![UPN Suffix](../Screenshots/upn-suffix.png)
+![UPN Suffix](./Screenshoots/upn-suffix.png)
 
-Updated user accounts to authenticate using:
+Updated user accounts to authenticate using the custom domain:
 
 ```text
 @barry-tech.com
@@ -61,12 +61,9 @@ Updated user accounts to authenticate using:
 ```text
 Barry-Tech
 │
-├── Users
-├── Devices
-├── Admins
-├── Security Groups
-├── Servers
-└── Service Accounts
+├── Users-OU
+├── Computer-OU
+├── SG-OU
 ```
 
 ---
@@ -74,13 +71,14 @@ Barry-Tech
 # Security Groups
 
 Configured:
-- Intune Users
-- MFA Users
-- Defender Users
-- Helpdesk Admins
-- Device Groups
+- Dev-SG
+- HR-SG
+- IT-SG
+- Gobal-Admin
 
 ---
+
+![UPN Suffix](./Screenshoots/OUs.png)
 
 # Device Domain Join
 
@@ -147,17 +145,15 @@ User Credential
 
 ---
 
+![UPN Suffix](./Screenshoots/gpo.png)
+
 # Validation
 
-Commands:
-
-```powershell
-gpupdate /force
-gpresult /r
-```
 
 Verified:
 - DNS resolution
 - Domain join
-- GPO application
-- User authentication
+
+![UPN Suffix](./Screenshoots/validate-domain-joined.png)
+
+![UPN Suffix](./Screenshoots/validate-hybride-joined.png)

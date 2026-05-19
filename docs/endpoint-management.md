@@ -27,7 +27,8 @@ Configured:
 | Setting | Value |
 |---|---|
 | MDM User Scope | All |
-| MAM User Scope | None |
+
+
 
 ---
 
@@ -48,16 +49,7 @@ Configured:
 
 # Validate Intune Enrollment
 
-Command:
-
-```powershell
-dsregcmd /status
-```
-
-Verified:
-- MDMUrl
-- TenantId
-- DeviceId
+![UPN Suffix](./Screenshoots/intune-devices.png)
 
 ---
 
@@ -71,6 +63,7 @@ Configured:
 - Secure Boot required
 - Password policy enforcement
 
+![UPN Suffix](./Screenshoots/intune-compliance.png)
 ---
 
 # Configuration Profiles
@@ -81,16 +74,10 @@ Configured:
 - Browser restrictions
 - Security hardening
 
----
-
-# Security Baselines
-
-Configured:
-- Windows Security Baseline
-- Defender Security Baseline
-- Edge Security Baseline
+![UPN Suffix](./Screenshoots/intune-config.png)
 
 ---
+
 
 # Windows LAPS
 
@@ -99,29 +86,24 @@ Configured:
 - Password backup to Entra ID
 - Local admin account management
 
+![UPN Suffix](./Screenshoots/laps.png)
+
 ---
 
 # Windows Autopilot
 
 ## Export Hardware Hash
 
-```powershell
-Get-WindowsAutopilotInfo.ps1
-```
+Uploaded hardware hash into Intune using script.
 
-Uploaded hardware hash CSV into Intune.
+![UPN Suffix](./Screenshoots/autopilot-enrollment.png)
 
 Configured:
 - User-driven deployment
 - Entra ID Join
 - Automatic enrollment
 
+![UPN Suffix](./Screenshoots/autopilot.png)
+
 ---
 
-# Validation
-
-Verified:
-- Device appears in Intune
-- Compliance policies applied
-- Configuration profiles assigned
-- Security baselines deployed
