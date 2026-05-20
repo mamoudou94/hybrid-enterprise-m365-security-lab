@@ -28,6 +28,8 @@ barry-tech.com
 
 Validated ownership using DNS TXT records.
 
+![UPN Suffix](./Screenshoots/custom-domain.png)
+
 ---
 
 # Azure AD Connect Deployment
@@ -40,11 +42,14 @@ Configured:
 - Password Writeback
 - OU Filtering
 
+![UPN Suffix](./Screenshoots/pwd-sync.png)
+
 Synchronized:
 - Users
 - Devices
 - Security Groups
 
+![UPN Suffix](./Screenshoots/ou-filtering.png)
 ---
 
 # Hybrid Azure AD Join
@@ -60,7 +65,7 @@ For:
 ```text
 Windows 10 and later
 ```
-
+![UPN Suffix](./Screenshoots/custom-domain.png)
 ---
 
 # Validate Hybrid Join
@@ -70,15 +75,7 @@ Command:
 ```powershell
 dsregcmd /status
 ```
-
-Expected:
-
-```text
-AzureAdJoined : YES
-DomainJoined : YES
-```
-
----
+![UPN Suffix](./Screenshoots/validate-hybride-joined.png)
 
 # Multi-Factor Authentication (MFA)
 
@@ -87,6 +84,7 @@ Configured:
 - SMS verification
 - MFA enforcement
 
+![UPN Suffix](./Screenshoots/mfa.png)
 ---
 
 # Conditional Access Policies
@@ -107,6 +105,8 @@ Configured:
 
 ---
 
+![UPN Suffix](./Screenshoots/conditional-access.png)
+
 # RBAC
 
 Configured:
@@ -126,6 +126,8 @@ Configured:
 - Approval workflows
 - Time-limited activation
 
+![UPN Suffix](./Screenshoots/pim-process.png)
+![UPN Suffix](./Screenshoots/pim.png)
 ---
 
 # Identity Governance
@@ -134,7 +136,8 @@ Configured:
 - Access Reviews
 - Entitlement Management
 - Lifecycle Workflows
-
+![UPN Suffix](./Screenshoots/lifecycle-workflow.png)
+![UPN Suffix](./Screenshoots/entitlement.png)
 ---
 
 # Self-Service Password Reset (SSPR)
@@ -146,18 +149,3 @@ Configured:
 
 ---
 
-# Validation
-
-Commands:
-
-```powershell
-dsregcmd /status
-Start-ADSyncSyncCycle -PolicyType Delta
-```
-
-Verified:
-- User synchronization
-- MFA prompts
-- Conditional Access enforcement
-- PIM activation
-- SSPR functionality

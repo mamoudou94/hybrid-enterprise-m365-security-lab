@@ -36,7 +36,7 @@ Start-ADSyncSyncCycle -PolicyType Delta
 # Hybrid Join Failures
 
 Verified:
-- SCP configuration
+- configuration
 - Device OU synchronization
 - Azure AD Connect Health
 
