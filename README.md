@@ -33,8 +33,8 @@ The lab demonstrates enterprise identity management, endpoint security, cloud au
 - [Endpoint Management](docs/endpoint-management.md)
 - [Security Operations](docs/security.md)
 - [Microsoft 365 Administration](docs/microsoft365.md)
-- [Validation & Testing](docs/validation.md)
 - [Troubleshooting](docs/troubleshooting.md)
+
 ---
 
 # Architecture
