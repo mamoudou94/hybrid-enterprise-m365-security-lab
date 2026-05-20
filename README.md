@@ -26,6 +26,16 @@ This project simulates a real-world hybrid enterprise environment integrating:
 The lab demonstrates enterprise identity management, endpoint security, cloud authentication, compliance enforcement, and modern device management.
 
 ---
+# Documentation
+
+- [Active Directory Domain Services (AD DS)](docs/adds.md)
+- [Identity & Access Management (IAM)](docs/iam.md)
+- [Endpoint Management](docs/endpoint-management.md)
+- [Security Operations](docs/security.md)
+- [Microsoft 365 Administration](docs/microsoft365.md)
+- [Validation & Testing](docs/validation.md)
+- [Troubleshooting](docs/troubleshooting.md)
+---
 
 # Architecture
 
